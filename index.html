@@ -16,9 +16,15 @@
           <!-- liaison attributs grace aux directives v-bind -->
         </div>
         <div class="product-description">
-          <h1>{{name}}</h1>    
+          <h1>{{name}}</h1>
           <!-- Interpolation  -->
-          <span class="price">{{price}}</span>
+          <p v-if="sale">
+            <span class="sale">{{ price }} </span>
+            <span class="new-price">{{ price - 5 }}</span>
+          </p>
+          <p v-else>
+            <span class="price">{{price}}</span>
+          </p>
         </div>
       </div>
     </div>
