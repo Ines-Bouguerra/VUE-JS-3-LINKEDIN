@@ -5,6 +5,7 @@ const app=Vue.createApp({
             price:12,
             image: 'assets/images/pizza1-tomate.jpg',
             sale:true,
+            notAvailable:false
         }
     }
 })
